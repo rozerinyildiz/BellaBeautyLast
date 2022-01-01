@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Fragments.ProductsFragment"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/txtProducts"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="Products"
+        android:textSize="24dp"
+        ></TextView>
+
+    <LinearLayout
+        android:id="@+id/productsImagesLayout"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center">
+
+        <ImageButton
+            android:visibility="visible"
+            android:id="@+id/btn1"
+            android:src="@drawable/celenes1"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:scaleType="fitXY" />
+
+        <ImageButton
+            android:id="@+id/btn2"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/celenes2"
+            android:visibility="visible" />
+
+        <ImageButton
+            android:id="@+id/btn3"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/laroche"
+            android:visibility="visible"
+            android:contentDescription="TODO" />
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center">
+
+        <Button
+            android:id="@+id/ingredients"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Ingredients"
+            android:visibility="gone" />
+
+        <Button
+            android:id="@+id/comments"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Comments"
+            android:visibility="gone"/>
+
+    </LinearLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="600dp"
+        android:id="@+id/products_frameLayout">
+    </FrameLayout>
+
+
+</LinearLayout>
