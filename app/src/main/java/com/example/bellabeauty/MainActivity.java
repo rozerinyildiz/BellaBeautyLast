@@ -7,9 +7,10 @@ import androidx.fragment.app.Fragment;
 import android.os.Bundle;
 import android.view.MenuItem;
 
-import com.example.bb.Fragments.HomeFragment;
-import com.example.bb.Fragments.ProductsFragment;
-import com.example.bb.Fragments.RoutinesFragment;
+
+import com.example.bellabeauty.Fragments.HomeFragment;
+import com.example.bellabeauty.Fragments.ProductsFragment;
+import com.example.bellabeauty.Fragments.RoutinesFragment;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 
 public class MainActivity extends AppCompatActivity {

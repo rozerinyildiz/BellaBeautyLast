@@ -7,7 +7,8 @@ import android.view.ViewGroup;
 
 import androidx.fragment.app.Fragment;
 
-import com.example.bb.R;
+import com.example.bellabeauty.R;
+
 
 public class HomeFragment extends Fragment {
 

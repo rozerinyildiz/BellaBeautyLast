@@ -4,7 +4,8 @@ import android.os.Bundle;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-import com.example.bb.Fragments.AddStepHomeFragment;
+
+import com.example.bellabeauty.Fragments.AddStepHomeFragment;
 
 public class AddStepActivity extends AppCompatActivity {
 
