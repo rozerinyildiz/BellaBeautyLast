@@ -16,7 +16,6 @@ import com.google.android.material.bottomnavigation.BottomNavigationView;
 public class MainActivity extends AppCompatActivity {
 
 
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -25,32 +24,32 @@ public class MainActivity extends AppCompatActivity {
         BottomNavigationView bottomNavigationView = findViewById(R.id.bottomNavigationView);
         bottomNavigationView.setOnNavigationItemSelectedListener(navListener);
 
-        getSupportFragmentManager().beginTransaction().replace(R.id.frameLayout,new HomeFragment()).commit();
+        getSupportFragmentManager().beginTransaction().replace(R.id.frameLayout, new HomeFragment()).commit();
     }
 
-    private BottomNavigationView.OnNavigationItemSelectedListener navListener=
+    private BottomNavigationView.OnNavigationItemSelectedListener navListener =
             new BottomNavigationView.OnNavigationItemSelectedListener() {
                 @Override
                 public boolean onNavigationItemSelected(@NonNull MenuItem item) {
                     Fragment selectedFragment = null;
 
-                    switch (item.getItemId()){
+                    switch (item.getItemId()) {
                         case R.id.navigation_home:
-                            selectedFragment=new HomeFragment();
+                            selectedFragment = new HomeFragment();
                             break;
                         case R.id.navigation_routines:
-                            selectedFragment=new RoutinesFragment();
+                            selectedFragment = new RoutinesFragment();
                             break;
                         case R.id.navigation_products:
-                            selectedFragment=new ProductsFragment();
+                            selectedFragment = new ProductsFragment();
                             break;
                         case R.id.navigation_signout:
                             //logine yolla
-                            selectedFragment=new HomeFragment();
+                            selectedFragment = new HomeFragment();
                             break;
                     }
 
-                    getSupportFragmentManager().beginTransaction().replace(R.id.frameLayout,selectedFragment).commit();
+                    getSupportFragmentManager().beginTransaction().replace(R.id.frameLayout, selectedFragment).commit();
                     return true;
                 }
             };
